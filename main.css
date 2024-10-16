@@ -1,4 +1,11 @@
-
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 #site-name {
     font-size: 50px;
@@ -6,6 +13,25 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #252525;
+    position: fixed;
+    top: 2%;
+}
+
+#report-button {
+    background-color: #ee3f3f;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    padding: 10px 20px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 #slogan-top {
@@ -13,32 +39,20 @@
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: -30px;
     color: #252525;
+    position: absolute;
+    top: 8%;
 }
 
 .main-container {
     text-align: center;
-    width: 80vh;
-    height: 39vh;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 150vh;
+    height: 50vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
-.main-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
-    
-
 
 .subtitle-h1 {
     font-size: 30px;
@@ -46,4 +60,79 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #252525;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skid-card {
+    background-color: #ffffff;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skid-card p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #252525;
+    margin-top: -10px;
+}
+
+.skid-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-width: 500px;
+    border: 4px solid #3fbfee;
+}
+
+
+.skid-card button {
+    background-color: #3fbfee;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.skid-card:hover {
+    transform: scale(1.005);
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.3), 0px 0px 20px rgba(0, 255, 238, 0.5);
+    transform-origin: center;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    color: #3f3f3f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    opacity: 50%;
 }
